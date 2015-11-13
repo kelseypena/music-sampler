@@ -1,0 +1,41 @@
+* {
+    -webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+h1 {
+    color: #fff;
+    font-family: Acme, "Arial Black", sans-serif;
+    font-size: 300%;
+    text-align: center;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: Oxygen, Georgia, serif;
+}
+
+article {
+    width: 1024px;
+    margin: auto;
+    padding:10px 40px 60px 40px; 
+}
+
+#bigImage img{
+    max-width: 100%;
+    height: auto;
+}
+
+.albumCover {
+    border: 1px solid #a0a0a0;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (max-width: 800px) {
+    article {
+        width: 100%;
+    }
+}

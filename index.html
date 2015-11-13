@@ -4,21 +4,57 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Panic! At the Disco Music Sampler</title>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen|Acme' rel='stylesheet' type='text/css'>
+    <link href="styles/main.css" rel="stylesheet">
   </head>
   <body>
         <h1>Panic! At the Disco</h1>
-        <img src="images/brendon.jpg" alt="Photo: Brendon Urie">
-        <p>Brendo Urie of Panic! At the Disco. Provided by <a href="https://flic.kr/p/8penyy">Janey Z</a> on Flickr.</p>
-        <p>Panic! At the Disco is awesome ... here is some stuff about them blah blah blah</p>
-        <img src="images/fever.jpg" alt="Album Cover: A Fever You Cant Sweat Out">
-        <img src="images/prettyodd.jpg" alt="Album Cover: Pretty Odd">
-        <img src="images/vicesvirtues.jpg" alt="Album Cover: Vices and Virtues">
-        <img src="images/bachelor.jpg" alt="Album Cover: Death of a Bachelor">
-        
-        <audio id="soundtrack" controls preload="auto"> 
+      <article>
+        <div id="bigImage">
+            <img src="images/brendon.jpg" alt="Photo: Brendon Urie">
+        </div>
+        <div id="panicInfo">
+            <p>Brendon Urie of Panic! At the Disco. Provided by <a href="https://flic.kr/p/8penyy">Janey Z</a> on Flickr.</p>
+            <p>American rock band, Panic! At the Disco was formed in 2004 by high school friends Brendon Urie, Ryan Ross and Spencer Smith. After sending a sample of their music to Fall Out Boy, the band was signed to the label Decaydance Records. Their debut album <i>A Fever You Can't Sweat Out</i> initially had slow record sales, but after the release of their first sigle "I Write Sins Not Tragedies" the band gained popularity. Although two of the founding members, Ross and Smith, are no longer with the band, Panic! At the Disco has maintained popularity, releasing five albums within the past ten years, with a sixth album, <i>Death of a Bachelor</i>, set to release in 2016.</p>
+            <p>Click <a href="https://en.wikipedia.org/wiki/Panic!_at_the_Disco">here</a> for more info about the band!</p>
+            <p>Click on an album cover to listen to a sample from each record!</p>
+        </div> 
+        <img id="fever" class="albumCover" src="images/fever.jpg" alt="Album Cover: A Fever You Cant Sweat Out">
+        <img id="prettyodd" class="albumCover" src="images/prettyodd.jpg" alt="Album Cover: Pretty Odd">
+        <img id="vicesvirtues" class="albumCover" src="images/vicesvirtues.jpg" alt="Album Cover: Vices and Virtues">
+        <img id="bachelor" class="albumCover" src="images/bachelor.jpg" alt="Album Cover: Death of a Bachelor">
+      
+      <div id="feverplayer">
+        <audio id="soundtrack1" controls preload="auto"> 
 	       <source src="audio/london.mp3" type="audio/mp3"> 
 	       <source src="audio/london.ogg" type="audio/ogg"> 
         </audio>
+      </div>     
+      <div id="prettyoddplayer">
+        <audio id="soundtrack2" controls preload="auto"> 
+	       <source src="audio/gentlemen.mp3" type="audio/mp3"> 
+	       <source src="audio/gentlemen.ogg" type="audio/ogg"> 
+        </audio>
+      </div>
+      <div id="vicesvirtuesplayer">
+        <audio id="soundtrack3" controls preload="auto"> 
+	       <source src="audio/witches.mp3" type="audio/mp3"> 
+	       <source src="audio/witches.ogg" type="audio/ogg"> 
+        </audio>
+      </div>
+      <div id="bachelorplayer">
+        <audio id="soundtrack4" controls preload="auto"> 
+	       <source src="audio/emperor.mp3" type="audio/mp3"> 
+	       <source src="audio/emperor.ogg" type="audio/ogg"> 
+        </audio>
+      </div>    
+      <div id="feverTitle"><p>London Beckoned Songs About Money Written by Machines</p></div>
+      <div id="prettyoddTitle"><p>That Green Gentleman (Things Have Changed)</p></div>
+      <div id="vicesvirtuesTitle"><p>Nearly Witches (Ever Since We Met...)</p></div>
+      <div id="bachelorTitle"><p>Emperor's New Clothes</p></div> 
+    </article>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/musicsampler.js"></script> 
   </body>
 </html>
        
